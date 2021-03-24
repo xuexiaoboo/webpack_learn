@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 直接将样式文件引入，打开页面发现不生效，因为浏览器本身是不能识别less文件的，需要一个工具将less代码编译成css -->
+  <link rel="stylesheet" href="./index.less">
+  <title>webpack简介</title>
+</head>
+<body>
+  <h1 id="title">Hello Webpack!!</h1>
+
+  <!-- 直接引入会在浏览器报错 `Uncaught SyntaxError: Cannot use import statement outside a module`, 因为js文件中有些语法浏览器可能并不能识别，也需要工具去进行编译 -->
+  <script src="./index.js"></script>
+</body>
+</html>
