@@ -16,7 +16,7 @@
    |-- index.js // webpack打包入口文件
 ```
 
-## 修改 src/index.js
+## 创建 src/index.js
 
 ```js
 /*
@@ -39,7 +39,7 @@ console.log(add(1, 2));
 
 控制台输入运行指令，会在 build 文件夹下新建 built.js 文件（新版的 webpack 会在build文件加下创建 built.js 文件夹并在此文件夹下添加 main.js 文件作为打包输出文件。），执行命令后如果报错<font color="red">Invalid regular expression: /(\p{Uppercase_Letter}+|\p{Lowercase_Letter}|\d)(\p{Uppercase_Letter}+)/: Invalid escape</font>则是Node版本不对。切换为10+版本。
 
-## 分别以开发环境及生产环境运行命令分别执行后查看打包后文件
+## 分别以开发环境及生产环境运行命令执行后分别查看打包后文件
 
 生产环境命令打包后的文件较开发环境打包后的文件体积更小，其中代码也进行了压缩。
 
@@ -72,7 +72,7 @@ console.log(add(1, 2));
 }
 ```
 
-在 src/index.js 问你件中引入，打开 build/index.html 页面，也可以正常执行。
+在 src/index.js 文件中引入，打开 build/index.html 页面，也可以正常执行。
 
 ## 创建 src/index.css 文件
 
