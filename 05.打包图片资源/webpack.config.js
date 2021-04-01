@@ -32,7 +32,7 @@ module.exports = {
           // 缺点：图片体积会变大（文件请求速度更慢）
           // 这里为了学习，一般7，8kb的小图片设置成base64处理
           limit: 20 * 1024,
-          // 问题：因为url-loader默认使用es6模块化解析，而html-loader引入图片是commonjs，解析是会出问题
+          // 问题：因为url-loader默认使用es6模块化解析，而html-loader引入图片是使用commonjs，解析时会出问题
           // 解决：关闭url-loader的es6模块化，使用commonjs解析(在webpack5 中不光要将 url-loader 的 esModule 设置为false，同时需要将html-loader同样进行配置才行)
           esModule: false,
           // 给解析的图片进行重命名
