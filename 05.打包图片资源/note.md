@@ -270,6 +270,8 @@ module.exports = {
 - 执行命令打包，成功打包，打开 build/index.html 文件,还是显示失败，查看生成的 build/index.html 文件代码，在 img 标签的 src 属性的图片 hash 和 less 文件引入同样图片生成 hash 不一致。
   > 问题：因为url-loader默认使用es6模块化解析，而html-loader引入图片是commonjs模块化，解析是会出问题的
   
+  ![html-loader的问题](./src/img/html-loader.png)
+  
   > 解决：关闭url-loader的es6模块化，使用commonjs解析(在webpack5 中不光要将 url-loader 的esModule 设置为false，同时需要将html-loader同样进行配置才行。试了下，<font color="ff0000">只</font>将 html-loader 的es6模块化关闭也可以)
 - 修改配置文件
   ```js
