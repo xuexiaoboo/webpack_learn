@@ -3,6 +3,9 @@
 ## 准备 icon 图标文件
 
 - 到阿里 icon 图标库下载几个图标
+  ```
+  打开https://www.iconfont.cn/  ===> 随便将几个图标添加到购物车  ===>  在购物车下载代码
+  ```
 
 ## 创建 src/index.html
 
@@ -36,6 +39,8 @@ import './iconfont.css'
 ```
 
 查看 iconfont.css 样式文件，可以看到其中还引入了一些其他的文件，在下载的 font 文件夹中找到并放到 iconfont.css 同一目录下(这里统一都放在 src 下)
+
+![files](./src/img/cssFiles.png)
 
 ## 创建 webpack.config.js 配置文件
 
