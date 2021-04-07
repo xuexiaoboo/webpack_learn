@@ -19,10 +19,26 @@ module.exports = {
       // 打包其他资源的loader
       {
         // 可以使用 test匹配文件，也可以使用exclude去排除文件，然后打包排除剩下的
-        exclude: /\.(html|css|js)$/,
+        exclude: /\.(html|css|js|png)$/,
         loader: 'file-loader',
         options: {
           name: '[hash:10].[ext]'
+        }
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 20 * 1024,
+          esModule: false,
+          name: '[hash:10].[ext]'
+        }
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          esModule: false
         }
       }
     ]
