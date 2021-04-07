@@ -62,7 +62,7 @@ module.exports = {
 
 使用 `webpack` 命令打包，发现在 build 文件下除了打包好的 built.js 文件还有一个 html 文件。查看 html 文件，其中自动引入了打包好的 built.js 文件。
 
-在之前的学习中都是自己创建 index.html ，打包后手动将 built.js 文件引入。使用了 html-webpack-plugin 插件后，他在打包后会自动生成一个 html 模板，并自动将打包后的文件引入。但是由插件自动生成的 html 文件，没有额外的元素。如果想在有元素的 html 文件中自动引入打包文件。则需要在 webpack.config.js 文件中对 html-webpack-plugin 进行配置
+在之前的学习中都是自己创建 index.html ，<font color="ff0000">打包后手动</font>将 built.js 文件引入。使用了 html-webpack-plugin 插件后，他在打包后会自动生成一个 html 模板，并自动将打包后的文件引入。但是由插件自动生成的 html 文件，没有额外的元素。如果想在有元素的 html 文件中自动引入打包文件。则需要在 webpack.config.js 文件中对 html-webpack-plugin 进行配置
 
 将前边手动创建的 index.html 作为模板配置给 html-webpack-plugin 的 template 属性。
 
