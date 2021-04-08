@@ -152,6 +152,8 @@
   }
   ```
 
+  <font color="ff0000">注：devServer 的端口号开始准备用 6666 ，可是 chrome 默认将一些端口号禁用了，比如 6666 ...</font>
+
 ## 文件打包
 
 - 使用 `npx webpack-dev-server` 命令启动devServer。可以成功打开页面并展示图标，图片;
