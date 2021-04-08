@@ -158,7 +158,7 @@
 
 - 使用 `npx webpack-dev-server` 命令启动devServer。可以成功打开页面并展示图标，图片;
 
-- 使用 `webpack` 命令进行打包输出，可以成功生成打包文件build。但是所有的资源文件全都在 build 目录下。修改 `webpack.config.js` 文件，让打包后的资源文件可以像 src 目录结构一样。
+- 使用 `webpack` 命令进行打包输出，可以成功生成打包文件build。但是所有的资源文件全都在 build 目录下。修改 `webpack.config.js` 文件，让打包后的资源文件可以像 src 目录结构一样(具体查看文件配置)。
   
   - 将 output 中 filename 的值 改为 `js/built.js`，就可以将打包后的 built.js 文件输出到 build/js 目录下；
 
