@@ -3,9 +3,10 @@
   width: 100px;
   background-color: pink;
   /* 添加一些有兼容性问题的样式 */
+  display: -webkit-flex;
   display: flex;
- -webkit-backface-visibility: hidden;
-         backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 #box2 {
   height: 200px;

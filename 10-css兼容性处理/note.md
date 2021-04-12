@@ -121,7 +121,7 @@ module.exports = {
 }
 ```
 
-这里配置了 `development` 和 `production` 两个环境的配置，postcss-preset-env 默认匹配 `production` 中的配置，如果想让他去匹配 `development` 中的配置，需要再 webpack.config.js 中使用 `process.env.NODE_ENV = "development"` 修改 Node 的环境变量。
+这里配置了 `development` 和 `production` 两个环境的配置，postcss-preset-env <font color="ff0000">默认</font>匹配 `production` 中的配置，如果想让他去匹配 `development` 中的配置，需要再 webpack.config.js 中使用 `process.env.NODE_ENV = "development"` 修改 Node 的环境变量。不进行任何设置则默认根据 production 进行样式兼容。
 
 ```js
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -187,3 +187,9 @@ module.exports = {
 使用 `webpack` 打包，并查看打包后的样式文件
 
 切换Node环境变量，查看 postcss-preset-env 在不同配置下加载的兼容性样式
+
+`development` 打包输出
+![development](./src/imgs/development.png)
+
+`production` 打包输出
+![production](./src/imgs/production.png)

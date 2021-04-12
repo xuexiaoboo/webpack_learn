@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { resolve } = require('path');
 
 // 设置node环境变量
-process.env.NODE_ENV = "development"
+// process.env.NODE_ENV = "development"
 
 module.exports = {
   entry: './src/js/index.js',
