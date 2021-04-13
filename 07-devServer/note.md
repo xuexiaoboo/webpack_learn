@@ -59,4 +59,4 @@ module.exports = {
 }
 ```
 
-由于 webpack-dev-server 是在项目本地下载的包，而不是全局安装的包，所以需要使用 npx `webpack-dev-server` 命令启动。启动如果报错，可能是 webpack-dev-server 与 webpack-cli 的版本不兼容，可以到 `node_modules/webpack-dev-server/bin/webpack-dev-server.js` 中查找 webpack-dev-server 依赖的webpack-cli版本号。
+由于 webpack-dev-server 是在项目本地下载的包，而不是全局安装的包，所以需要使用 `npx webpack-dev-server` 命令启动。启动如果报错，可能是 webpack-dev-server 与 webpack-cli 的版本不兼容，可以到 `node_modules/webpack-dev-server/bin/webpack-dev-server.js` 中查找 webpack-dev-server 依赖的webpack-cli版本号。

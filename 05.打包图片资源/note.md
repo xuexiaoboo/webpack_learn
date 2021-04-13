@@ -87,7 +87,7 @@ module.exports = {
 
 - 执行 `webpack` 命令打包，报错。查看打包log发现是在处理 less 文件中的图片引入的时候出现了问题。所以需要引入一个处理图片的 loader；
 - 处理图片引入需要用到 url-loader ，url-loader 依赖 file-loader，所以同时下载这两个 loader；
-- 在 webpac.config.js 文件中对 url-loader 进行配置
+- 在 webpack.config.js 文件中对 url-loader 进行配置
   ```js
   const { resolve } = require('path');
   const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -138,7 +138,7 @@ module.exports = {
   1. 查看 build 文件，其中有一张乱码名称的图片，是打包后的1.png，查看打包前后体积比较；
   2. 同时引入了两张图片，但打包只打包了一张，是因为图片 2.png 的体积大小小于 url-loader 配置的 limit，被base64处理。具体可以查看 built.js 文件，可以查看打包的log查看 2.png 打包前后体积变化;
   3. 在浏览器打开打包生成 index.html，图片正常显示；
-  4. 打包后图片的乱码名称是打包组员路径的 hash值，如果觉得太长，可以对 url-loader 的name属性进行配置。
+  4. 打包后图片的乱码名称是打包资源路径的 hash 值，如果觉得太长，可以对 url-loader 的name属性进行配置。
    ```js
     const { resolve } = require('path');
     const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -208,7 +208,7 @@ module.exports = {
 </html>
 ```
 
-- 添加标签后打包可能成功，可能失败，如果没有失败，在浏览器打开 build/index.html 文件，img标签并没有成功显示，这是因为 url-loader只能处理url引入的图片资源，处理不了html页面中img标签引入的图片，需要配置 html-loader；
+- 添加标签后打包可能成功，可能失败，如果没有失败，在浏览器打开 build/index.html 文件，img标签并没有成功显示，这是因为 url-loader 只能处理url引入的图片资源，处理不了html页面中img标签引入的图片，需要配置 html-loader；
 - 下载 html-loader 并配置;
   ```js
   const { resolve } = require('path');
