@@ -78,7 +78,7 @@ module.exports = {
 
 使用 eslint 检查代码需要下载 `eslint`、`eslint-loader`；
 
-这里使用 airbnb 的代码校验规范，需要下载相关 `eslint-config-airbnb-base`(有一个 eslint-config-airbnb ,里边包含对于 React 的兼容，这里不需要使用 React，所以选 eslint-config-airbnb-base)、`eslint-plugin-import`。airbnb 具体可到 github 查看，airbnb 对于 eslint 的使用可到[npmjs.com](https://www.npmjs.com)查看，这里选择使用 `eslint-config-airbnb-base`
+这里使用 airbnb 的代码校验规范，需要下载相关 `eslint-config-airbnb-base`(有一个 eslint-config-airbnb ,里边包含对于 React 的兼容，这里不需要使用 React，所以选 eslint-config-airbnb-base)、`eslint-plugin-import`。airbnb 具体可到 [github](https://github.com/airbnb/javascript) 查看，airbnb 对于 eslint 的使用可到[npmjs.com](https://www.npmjs.com)查看，这里选择使用 `eslint-config-airbnb-base`
 
 注意：需要在配置 eslint-loader 时，将 node_modules 排除，eslint-loader 默认检查项目中所有匹配文件。
 
