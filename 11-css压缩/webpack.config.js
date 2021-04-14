@@ -20,14 +20,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           {
-            loader: 'postcss-loader',
-            // options: {
-            //   ident: 'postcss',
-            //   plugins: () => [
-            //     // postcss 的插件
-            //     require('postcss-preset-env')()
-            //   ]
-            // }
+            loader: 'postcss-loader'
           }
         ]
       }
