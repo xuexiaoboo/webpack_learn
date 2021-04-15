@@ -15,7 +15,7 @@ module.exports = {
       // airbnb：eslint-config-airbnb-base    eslint-plugin-import
       {
         test: /\.js$/,
-        exclude: '/node_modules/',
+        exclude: /node_modules/,
         loader: 'eslint-loader',
         options: {
           fix: true
