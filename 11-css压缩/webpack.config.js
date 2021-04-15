@@ -33,7 +33,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style/built.css'
     }),
-    // new OptimizeCssAssetsWebpackPlugin()
+    new OptimizeCssAssetsWebpackPlugin()
   ],
   mode: 'development'
 }

@@ -126,6 +126,7 @@ module.exports = {
                   version: 3
                 },
                 // 指定兼容的浏览器版本下限
+                // 如果不设置，@babel/preset-env 会使用browserslist 的配置
                 targets: {
                   chrome: '60',
                   firefox: '60',
