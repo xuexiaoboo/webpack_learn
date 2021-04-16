@@ -2,7 +2,7 @@
 
 ## 压缩 js 代码
 
-压缩 js 代码只需要在 webpack.config.js 中，将 mode 设置为 `production`，之前在 `01-webpack简介` 中放了一张 webpack 在开发环境与生产环境默认配置不同的图，其中webpack在生产环境会自动引入 js 压缩的插件，所以只需要吧 webpack 设置为生产环境就可以自动压缩 js 代码了。
+压缩 js 代码只需要在 webpack.config.js 中，将 mode 设置为 `production`，之前在 `01-webpack简介` 中放了一张 webpack 在开发环境与生产环境默认配置不同的图，其中webpack在生产环境会自动启用 js 压缩的插件，webpack 5.x 之前是是启用 `uglifyjs-webpack-plugin`，webpack 5.x 之后启用 `terser-webpack-plugin`，所以只需要吧 webpack 设置为生产环境就可以自动压缩 js 代码了。
 
 ## 压缩 html 代码
 
