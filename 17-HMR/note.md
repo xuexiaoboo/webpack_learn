@@ -103,7 +103,7 @@ module.exports = {
 
 - 结论：
   
-  样式文件可以直接适配 HMR 的配置，因为在 style-loader 中已经实现了，这也是为什么在开发环境中使用 style-loader(可以帮助我们提升开发效率)，而在生产环境中要使用 `mini-css-extract-plugin` 将样式文件抽离成单独的文件。
+  样式文件可以直接适配 HMR 的配置，因为在 style-loader 中已经使用 `module.hot.accept` 实现了，这也是为什么在开发环境中使用 style-loader(可以帮助我们提升开发效率)，而在生产环境中要使用 `mini-css-extract-plugin` 将样式文件抽离成单独的文件。
 
 ### 2. HMR-html文件
 
