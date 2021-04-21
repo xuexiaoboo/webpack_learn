@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'built.js',
-    path: resolve(__dirname, 'build')
+    path: resolve(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -13,8 +13,8 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ]
+          'css-loader',
+        ],
       },
       // 打包其他资源的loader
       {
@@ -22,8 +22,8 @@ module.exports = {
         exclude: /\.(html|css|js|png)$/,
         loader: 'file-loader',
         options: {
-          name: '[hash:10].[ext]'
-        }
+          name: '[hash:10].[ext]',
+        },
       },
       {
         test: /\.(jpg|png|gif)$/,
@@ -31,24 +31,24 @@ module.exports = {
         options: {
           limit: 20 * 1024,
           esModule: false,
-          name: '[hash:10].[ext]'
-        }
+          name: '[hash:10].[ext]',
+        },
       },
       {
         test: /\.html$/,
         loader: 'html-loader',
         options: {
-          esModule: false
-        }
-      }
-    ]
+          esModule: false,
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin(
       {
-        template: './src/index.html'
-      }
-    )
+        template: './src/index.html',
+      },
+    ),
   ],
   mode: 'development',
 
@@ -63,6 +63,6 @@ module.exports = {
     // 端口号
     port: 3000,
     // 自动打开本地默认浏览器
-    open: true
-  }
-}
+    open: true,
+  },
+};
