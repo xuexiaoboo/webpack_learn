@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { resolve } = require('path');
 
 // 设置node环境变量
@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     filename: 'js/built.js',
-    path: resolve(__dirname, 'build')
+    path: resolve(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -27,18 +27,18 @@ module.exports = {
             //     require('postcss-preset-env')()
             //   ]
             // }
-          }
-        ]
-      }
-    ]
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'style/built.css'
-    })
+      filename: 'style/built.css',
+    }),
   ],
-  mode: 'development'
-}
+  mode: 'development',
+};

@@ -1,4 +1,3 @@
-
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -6,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'built.js',
-    path: resolve(__dirname, 'build')
+    path: resolve(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -15,8 +14,8 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'less-loader'
-        ]
+          'less-loader',
+        ],
       },
       {
         // 这个loader配置只能处理url引入的图片资源，处理不了html页面中img标签引入的图片
@@ -38,25 +37,25 @@ module.exports = {
           // 给解析的图片进行重命名
           // [hash:10]  取图片解析后hash的前10位
           // [ext]   取文件的原扩展名
-          name: '[hash:10].[ext]'
-        }
+          name: '[hash:10].[ext]',
+        },
       },
       {
         test: /\.html$/,
         // 处理html文件的img图片（负责引入img,从而能被url-loader进行处理）
         loader: 'html-loader',
         options: {
-          esModule: false
-        }
-      }
-    ]
+          esModule: false,
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin(
       {
-        template: './src/index.html'
-      }
-    )
+        template: './src/index.html',
+      },
+    ),
   ],
-  mode: 'development'
-}
+  mode: 'development',
+};

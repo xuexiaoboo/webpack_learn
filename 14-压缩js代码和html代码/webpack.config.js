@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     filename: 'js/built.js',
-    path: resolve(__dirname, 'build')
+    path: resolve(__dirname, 'build'),
   },
   module: {
   },
@@ -18,8 +18,8 @@ module.exports = {
         collapseWhitespace: true,
         // 去除注释
         removeComments: true,
-      }
-    })
+      },
+    }),
   ],
-  mode: 'production'
-}
+  mode: 'production',
+};
