@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     filename: 'js/built.js',
-    path: resolve(__dirname, 'build')
+    path: resolve(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -20,15 +20,15 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'less-loader'
-        ]
+          'less-loader',
+        ],
       },
       {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ]
+          'css-loader',
+        ],
       },
       {
         // 处理图片资源, 这个配置只能处理样式文件中引入的图片资源，不能处理img标签中的图片
@@ -38,16 +38,16 @@ module.exports = {
           limit: 20 * 1024,
           name: '[hash:10].[ext]',
           esModule: false,
-          outputPath: 'imgs'
-        }
+          outputPath: 'imgs',
+        },
       },
       {
         // 这个 loader 的配置可以处理 html 文件中的img标签
         test: /\.html$/,
         loader: 'html-loader',
         options: {
-          esModule: false
-        }
+          esModule: false,
+        },
       },
       {
         // 处理其他资源
@@ -55,22 +55,22 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[hash:10].[ext]',
-          outputPath: 'media'
-        }
-      }
-    ]
+          outputPath: 'media',
+        },
+      },
+    ],
   },
   plugins: [
     // plugins 插件配置，切记是数组
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+      template: './src/index.html',
+    }),
   ],
   mode: 'development',
   devServer: {
     contentBase: resolve(__dirname, 'build'),
     compress: true,
     open: true,
-    port: 3000
-  }
-}
+    port: 3000,
+  },
+};
