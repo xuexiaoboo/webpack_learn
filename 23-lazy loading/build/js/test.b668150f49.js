@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[43],{411:function(n,u,e){"use strict";function t(n){return n*n}function r(n){return n*n*n}e.r(u),e.d(u,{square:function(){return t},cube:function(){return r}}),console.log("test.js 文件被加载了~")}}]);
