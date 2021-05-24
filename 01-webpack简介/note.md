@@ -67,7 +67,7 @@ $('#title').click(() => {
 
 ### 2. output
 
-输出指示webpack打包后的资源bundle输出到哪里，一级如何命名。
+输出，指示webpack打包后的资源bundle输出到哪里，以及如何命名。
 
 ### 3. loader
 
