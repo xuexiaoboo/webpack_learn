@@ -24,7 +24,7 @@ webpack只可以识别打包js和json资源，像这样直接引入样式资源�
 
 webpack.config.js 文件是 webpack 的配置文件。指示 webpack 干哪些活（当运行 webpack 指令时，会加载这里的配置）
 
-所有的构建工具都是基于Node平台运行的 ~~ 模块化默认才用commonjs(项目代码使用的是 ES6 的模块化)
+所有的构建工具都是基于Node平台运行的 ~~ 模块化默认采用commonjs(项目代码使用的是 ES6 的模块化)
 
 ```js
 const { resolve } = require('path');

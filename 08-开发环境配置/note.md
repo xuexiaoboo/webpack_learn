@@ -12,7 +12,6 @@
  |
  |--- js
  |  |-- index.js
- |
  | 
  |--- media
  |
@@ -21,6 +20,7 @@
  |
  |-- index.html
  |
+
 -- webpack.config.js
 ```
 

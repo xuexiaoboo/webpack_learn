@@ -4,6 +4,8 @@
 
 ## 修改 webpack.config.js 文件
 
+添加 devServer 属性配置
+
 ```js
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
