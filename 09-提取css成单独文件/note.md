@@ -71,7 +71,7 @@ import '../style/b.css'
 
 之前打包样式文件使用 `css-loader` 和 `style-loader` 两个 loader，其中 `css-loader` 负责将样式文件打包插入到输出的 built.js 文件中，`style-loader` 负责将 built.js 中的样式字符串抽出并创建 style 标签插入到浏览器打开的页面中（可通过在浏览器打开页面查并看源码）。
 
-这里需要将样式资源单独抽出打包成文件。需要用到 `mini-css-extract-plugin` 插件，在 plugin 中配置抽出的样式资源输出的目录。在处理样式资源的 loader 中用 `MiniCssExtractPlugin.loader` 代替 `style-loader`，将打包输出的样式文件通过 link 标签引入到输出的 index.html 文件中。
+这里需要将样式资源单独抽出打包成文件。需要用到 `mini-css-extract-plugin` 插件，在 plugin 中配置抽出的样式资源输出的目录。在处理样式资源的 loader 中用 `MiniCssExtractPlugin.loader` 代替 `style-loader`，插件会自动将将打包输出的样式文件通过 link 标签引入到输出的 index.html 文件中。
 
 ```js
 const HtmlWebpackPlugin = require('html-webpack-plugin');
