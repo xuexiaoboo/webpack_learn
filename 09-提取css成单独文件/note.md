@@ -53,7 +53,7 @@
 ```css
 /* b.css */
 
-#box1 {
+#box2 {
   height: 200px;
   width: 200px;
   background-color: deeppink;
