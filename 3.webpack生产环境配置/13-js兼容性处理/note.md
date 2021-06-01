@@ -90,7 +90,7 @@ console.log(add(2, 3));
 
 使用 `webpack` 打包，查看 build/js/built.js 文件。<font color="ff0000">现在打包的js文件大小为 446 KiB。包的体积明显增大</font>
 
-查看 build/js/built.js，发现当中被添加了很多关于兼容性的内容。在本地chrome以及低版本 ie 都可以正常访问。(但确定显而易见)
+查看 build/js/built.js，发现当中被添加了很多关于兼容性的内容。在本地chrome以及低版本 ie 都可以正常访问。(但缺点显而易见)
 
 ## 3. 全部js语法兼容（按需引入）
 
@@ -126,7 +126,7 @@ module.exports = {
                   version: 3
                 },
                 // 指定兼容的浏览器版本下限
-                // 如果不设置，@babel/preset-env 会使用browserslist 的配置
+                // 如果不设置，@babel/preset-env 会使用 browserslist 的配置
                 targets: {
                   chrome: '60',
                   firefox: '60',

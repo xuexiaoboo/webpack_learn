@@ -156,7 +156,7 @@ options: {
 
 这个配置会自动修复 eslint-loader 发现的格式错误，可以通过查看打包后输出的 build/js/built.js 文件查看自动修复结果。
 
-再使用 `webpack` 打包，已经没有格式报错了，但是有一个 warning，提示 console 不推荐使用。可以再 console 的前一行使用 `// eslint-desable-next-line` 让 eslint-loader 不对下一行进行校验，但不推荐使用。
+再使用 `webpack` 打包，已经没有格式报错了，但是有一个 warning，提示 console 不推荐使用。可以再 console 的前一行使用 `// eslint-disable-next-line` 让 eslint-loader 不对下一行进行校验，但不推荐使用。
 
 ## .eslintrc
 

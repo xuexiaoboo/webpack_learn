@@ -54,4 +54,4 @@ module.exports = {
 </html>
 ```
 
-使用 `webpack` 命令打包，查看输出的 build/index.html 文件，成功去掉了空格一级注释。
+使用 `webpack` 命令打包，查看输出的 build/index.html 文件，成功去掉了空格以及注释。
