@@ -10,7 +10,7 @@
 > 
 > 其中一些值适用于开发环境，一些适用于生产环境。对于开发环境，通常希望更快速的 source map，需要添加到 bundle 中以增加体积为代价，但是对于生产环境，则希望更精准的 source map，需要从 bundle 中分离并独立存在。
 
-提前将 src/js/print.js 文件中修改处错误，方便后边插件不同 source-map 模式下的映射差别
+提前将 src/js/print.js 文件中修改出错误，方便后边查看不同 source-map 模式下的映射差别
 
 ### 1. 'source-map' 模式（外部）
 

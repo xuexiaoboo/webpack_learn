@@ -277,5 +277,9 @@ module.exports = {
 
   注：只能处理非入口文件的其他js模块，与html文件同理，入口js文件变化，相当于根文件变化，其他js模块必然会重新加载打包
 
+  ***
+
+  注~注~注: 原本开启 HMR 需要在 plugins 中 添加  `new webpack.HotModuleReplacementPlugin()` 来完全开区 HMR ，但是这里没写也可以成功开启 HMR，是因为 `webpack-dev-server` 这个插件内部对这个插件的配置进行检查，如果没有配置他会自动添加这个插件。所以如果使用 `weboack-dev-server` 之外的插件开启服务的话或许还是要手动引入这个plugin
+
 
 
