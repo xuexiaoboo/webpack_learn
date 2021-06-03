@@ -2,7 +2,7 @@
 
 ## 第一种配置方式（demo1）
 
-### 1.由于 code split 是针对于js代码的，所以讲样式文件啥的都删掉，webpack中的配置也进行精简。
+### 1.由于 code split 是针对于js代码的，所以样式文件啥的都删掉，webpack中的配置也进行精简。
   ```js
   // webpack.config.js
 
