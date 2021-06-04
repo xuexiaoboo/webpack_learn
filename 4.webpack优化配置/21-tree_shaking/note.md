@@ -6,3 +6,13 @@
 > - 在 package.json 中配置 `"sideEfficts"` 属性：使用数组添加不需要 shaking 的文件
 
 优点: 减少打包体积
+
+注：`development` 环境开启 tree shaking 需要配置 `usedExports`
+
+```js
+// webpack.config.js
+
+optimization: {
+  usedExports: true
+}
+```
